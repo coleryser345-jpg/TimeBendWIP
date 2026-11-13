@@ -1,0 +1,12 @@
+{
+  "format": "timebend.pattern",
+  "version": 0,
+  "name": "Tape stop",
+  "lengthBeats": 4,
+  "seed": 1,
+  "time": [
+    { "beat": 0, "source": 0, "shape": "play" },
+    { "beat": 3, "source": 3, "shape": "easeOut" },
+    { "beat": 4, "source": 3.5 }
+  ]
+}

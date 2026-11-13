@@ -1,0 +1,14 @@
+{
+  "format": "timebend.pattern",
+  "version": 0,
+  "name": "Triplet chop",
+  "lengthBeats": 4,
+  "seed": 7,
+  "gate": {
+    "steps": [1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0],
+    "probability": [1, 1, 1, 1, 1, 0.75, 1, 1, 1, 1, 1, 1],
+    "off": "black",
+    "attackMs": 0,
+    "releaseMs": 10
+  }
+}

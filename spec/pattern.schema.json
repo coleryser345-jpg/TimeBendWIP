@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://timebend.app/schema/pattern-v0.json",
+  "title": "Timebend pattern v0",
+  "type": "object",
+  "required": ["format", "version", "name", "lengthBeats"],
+  "additionalProperties": false,
+  "properties": {
+    "format": { "const": "timebend.pattern" },
+    "version": { "const": 0 },
+    "name": { "type": "string", "minLength": 1 },
+    "lengthBeats": { "type": "number", "exclusiveMinimum": 0 },
+    "seed": { "type": "integer" },
+    "time": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["beat", "source"],
+        "additionalProperties": false,
+        "properties": {
+          "beat": { "type": "number", "minimum": 0 },
+          "source": { "type": "number" },
+          "shape": { "enum": ["play", "linear", "easeOut", "easeIn", "freeze"] }
+        }
+      }
+    },
+    "gate": {
+      "type": "object",
+      "required": ["steps"],
+      "additionalProperties": false,
+      "properties": {
+        "steps": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "enum": [0, 1] }
+        },
+        "probability": {
+          "type": "array",
+          "items": { "type": "number", "minimum": 0, "maximum": 1 }
+        },
+        "off": { "enum": ["black", "white", "freeze"] },
+        "attackMs": { "type": "number", "minimum": 0 },
+        "releaseMs": { "type": "number", "minimum": 0 }
+      }
+    }
+  }
+}

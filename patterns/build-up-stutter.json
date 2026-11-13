@@ -1,0 +1,21 @@
+{
+  "format": "timebend.pattern",
+  "version": 0,
+  "name": "Build-up stutter",
+  "lengthBeats": 4,
+  "seed": 1,
+  "time": [
+    { "beat": 0, "source": 0, "shape": "play" },
+    { "beat": 1, "source": 0, "shape": "play" },
+    { "beat": 1.5, "source": 0, "shape": "play" },
+    { "beat": 2, "source": 0, "shape": "play" },
+    { "beat": 2.25, "source": 0, "shape": "play" },
+    { "beat": 2.5, "source": 0, "shape": "play" },
+    { "beat": 2.75, "source": 0, "shape": "play" },
+    { "beat": 3, "source": 3, "shape": "play" }
+  ],
+  "gate": {
+    "steps": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "off": "white"
+  }
+}

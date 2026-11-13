@@ -1,0 +1,11 @@
+{
+  "format": "timebend.pattern",
+  "version": 0,
+  "name": "Half-time",
+  "lengthBeats": 4,
+  "seed": 1,
+  "time": [
+    { "beat": 0, "source": 0, "shape": "linear" },
+    { "beat": 4, "source": 2 }
+  ]
+}
